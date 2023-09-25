@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BT JS BUỔI 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Bài 1 -->
+    <div class="container my-5">
+      <h5>Bài 1: Quản lý tuyển sinh</h5>
+      <div class="form-group w-25">
+        <label>Điểm chuẩn của hội đồng</label>
+        <input type="number" class="form-control" id="diemChuan" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Điểm môn 1</label>
+        <input type="number" class="form-control" id="diemMon1" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Điểm môn 2</label>
+        <input type="number" class="form-control" id="diemMon2" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Điểm môn 3</label>
+        <input type="number" class="form-control" id="diemMon3" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Khu vực</label>
+        <select id="khuVuc" class="form-control">
+          <option value="X">X</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Đối tượng</label>
+        <select id="doiTuong" class="form-control">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="form-group w-25 my-3">
+        <button class="btn btn-outline-info" id="btn1">Xét điểm</button>
+      </div>
+      <div
+        class="alert alert-info my-3 w-25 my-3"
+        style="display: none"
+        id="ketQua1"
+      ></div>
+    </div>
+    <hr />
+
+    <!-- Bài 2 -->
+    <div class="container my-5">
+      <h5>Bài 2: Tính tiền điện</h5>
+      <div class="form-group w-25">
+        <label>Tên khách hàng</label>
+        <input type="text" class="form-control" id="tenKH" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Nhập vào số kW</label>
+        <input type="number" class="form-control" id="soKW" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <button class="btn btn-outline-info" id="btn2">Tính tiền điện</button>
+      </div>
+      <div
+        class="alert alert-info my-3 w-25 my-3"
+        style="display: none"
+        id="ketQua2"
+      ></div>
+    </div>
+    <hr />
+
+    <!-- Bài 3 -->
+    <div class="container my-5">
+      <h5>Bài 3: Tính thuế thu nhập cá nhân</h5>
+      <div class="form-group w-25">
+        <label>Họ tên</label>
+        <input type="text" class="form-control" id="hoTen" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Tổng thu nhập năm</label>
+        <input type="number" class="form-control" id="tongThuNhapNam" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Số người phụ thuộc</label>
+        <input type="number" class="form-control" id="soNguoiPhuThuoc" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <button class="btn btn-outline-info" id="btn3">Tính thuế TNCN</button>
+      </div>
+      <div
+        class="alert alert-info my-3 w-25 my-3"
+        style="display: none"
+        id="ketQua3"
+      ></div>
+    </div>
+    <hr />
+
+    <!-- Bài 4 -->
+    <div class="container my-5">
+      <h5>Bài 4: Tính tiền cáp</h5>
+      <div class="form-group w-25">
+        <label>Mã khách hàng</label>
+        <input type="number" class="form-control" id="maKH" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Loại khách hàng</label>
+        <ul style="list-style: none">
+          <li class="type">
+            <input type="radio" id="nhaDan" value="nhaDan" name="selector" />
+            <label for="nhaDan">Nhà dân</label>
+            <div class="check"></div>
+          </li>
+          <li class="type">
+            <input
+              type="radio"
+              id="doanhNghiep"
+              value="doanhNghiep"
+              name="selector"
+            />
+            <label for="doanhNghiep">Doanh nghiệp</label>
+            <div class="check"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Số kết nối</label>
+        <input type="number" class="form-control" id="soKetNoi" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <label>Số kênh cao cấp</label>
+        <input type="number" class="form-control" id="soKenhCaoCap" />
+      </div>
+      <div class="form-group w-25 my-3">
+        <button class="btn btn-outline-info" id="btn4">Tính hoá đơn</button>
+      </div>
+      <div
+        class="alert alert-info my-3 w-25 my-3"
+        style="display: none"
+        id="ketQua4"
+      ></div>
+    </div>
+    <hr />
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
